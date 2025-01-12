@@ -682,7 +682,7 @@ function App() {
                 rotationAnimation.restart(); // Restart rotation if scrolling back
             },
             scrub: 1, // Smooth animation with scroll
-            markers: true, // Enable debugging markers
+            markers: false, // Enable debugging markers
         });
         return () => rotationAnimation.kill(); // Cleanup on unmount
     }, []);
@@ -695,7 +695,7 @@ function App() {
                 start: 'center center',
                 end: 'center+=200% center',
                 scrub: 1,
-                markers: true,
+                markers: false,
             },
         });
         const timeline2 = gsap.timeline({
@@ -704,7 +704,7 @@ function App() {
                 start: 'center center',
                 end: 'center+=200% center',
                 scrub: 1,
-                markers: true,
+                markers: false,
             },
         });
         const timeline3 = gsap.timeline({
@@ -713,7 +713,7 @@ function App() {
                 start: 'center center',
                 end: 'center+=200% center',
                 scrub: 1,
-                markers: true,
+                markers: false,
             },
         });
 
